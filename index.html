@@ -7,13 +7,19 @@ layout: default
     <ul class="post-list">
     {% for post in site.posts limit:10 %}
         <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-        <h2>
-            <a class="page-heading" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        
-            {{ post.content }}
+            <header class="post-header">
+                <h1 class="post-title" itemprop="name headline">{{ post.title }}</h1>
+                <p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>{% if post.author %} •
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ post.author }}</span></span>{% endif %}</p>
+            </header>
+
+            <div class="post-content" itemprop="articleBody">
+                {{ post.content }}
+            </div>
+
+            </article>
         </li>
     {% endfor %}
     </ul>
