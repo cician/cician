@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    <table class="page-outer" >
+        <tr>
+            <td>
+                {% include header.html %}
+            </td>
+        </tr>
+        <tr>
+            <td class="page-content">
+                <table class="page-content">
+                    <tr>
+                        <td class="page-sidebar">
+                            <div class="wrapper">
+                                {% include sidebar.html %}
+                            </div>
+                        </td>
+                        <td class="page-post">
+                            <div class="wrapper">
+                                {{ content }}
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="page-footer">
+                {% include footer.html %}
+            </td>
+        </tr>
+    </table>
+  </body>
+
+</html>

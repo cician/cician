@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "I'm here on this little planet"
+date:   2012-02-16 23:04:00 +0100
+categories: updates random WebGL
+--- 
+Just playing around with [this thing](https://github.com/notlion/streetview-stereographic) I found. You can see my home. 
+
+{% raw %}
+<iframe src="http://notlion.github.com/streetview-stereographic/#o=0,0,0,1&z=1.566&mz=18&p=44.89166,10.89942&fw=1&fs=5d00000100be0200000000000000381c88cdaf8125d4569ed1e6e6c09c2fe72b7d489ad9d27ce026c849f505dd720b984eab3d592296e140dc2a021bc5b085e627fbc1faba6074f6a6d9d6c2b534af6dda674f23d133df9d14f676de04079066268a41fcc7590e877adc0fceba04a292b29b1409ffe2ba663d571534ed343404e825ee37988983908f89aaab4233db299d080eafc74956751462c65a784934e371eff4fc890f52c700c4c4da6e2dcea264be601408f4254bf7cdaccd35f64c3ee8c00e0770e92c42d6a5df189227c6bed40ea39d5253a096ca79616511e578a52279460d71b8530578ea1cdceacceb1e0e191fcc21c4c50c1ca4767814023d13cf29a355260dd87f10625c05586615b38e8f19057b3f7587932691cb72df56e31f09be0fb23006c9177bf0be4dac5c9fc01d5fb2f6b937c5669a5f02fa5e26d178faad0616c0cf1a93e78f07cc4401197e90e8b643916d7e202117e74fc08fa220fbe90ad57579c2d9f7edceaf0d3f87f22308b78a2386a8ae73fad1c42166fad3677dc974fb646130f36fa3121ada358a87a3ce578a515380ffbc530b80" width="600" height="600" frameborder="0"></iframe>
+{% endraw %}

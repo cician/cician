@@ -1,0 +1,54 @@
+<div class="home">
+
+    <h1 class="sidebar-heading">PAGES</h1>
+    
+    <ul class="sidebar-list">
+    {% for my_page in site.pages %}
+        {% if my_page.title %}
+            <li>
+                {% if page.url == my_page.url %}
+                    <a class="sidebar-link-current" href="{{ my_page.url | prepend: site.baseurl }}">> {{ my_page.title }}</a>
+                {% else %}
+                    <a class="sidebar-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+                {% endif %}
+            </li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+
+    <h1 class="sidebar-heading">BLOG ARCHIVE</h1>
+
+    <ul class="sidebar-list">
+    {% for post in site.posts %}
+        <li>
+            {% if page.url == post.url %}
+                <span class="sidebar-meta">> {{ post.date | date: "%b %-d, %Y" }}</span>
+                <a class="sidebar-link-current" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            {% else %}
+                <span class="sidebar-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                <a class="sidebar-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            {% endif %}
+        </li>
+    {% endfor %}
+    </ul>
+
+    <h1 class="sidebar-heading">MORE</h1>
+    
+    <ul class="social-media-list">
+        <li>
+            <a href="{{ "/feed.xml" | prepend: site.baseurl }}"><img src="/files/favicon.ico" style="width: 16pt; height: 16pt"/>RSS feed</a>
+        </li>
+        {% if site.github_username %}
+        <li>
+            {% include icon-github.html username=site.github_username %}
+        </li>
+        {% endif %}
+
+        {% if site.twitter_username %}
+        <li>
+            {% include icon-twitter.html username=site.twitter_username %}
+        </li>
+        {% endif %}
+    </ul>
+
+</div>
