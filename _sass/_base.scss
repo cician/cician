@@ -146,16 +146,17 @@ pre,
 code {
     font-size: 15px;
     border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
+    border-radius: 0px;
+    background-color: #ffffff;
 }
 
 code {
     padding: 1px 5px;
+    white-space: pre-wrap;
 }
 
 pre {
-    padding: 8px 12px;
+    padding: 3px;
     overflow-x: auto;
 
     > code {

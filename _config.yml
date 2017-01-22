@@ -17,3 +17,6 @@ github_username:  cician
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
