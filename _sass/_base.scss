@@ -30,7 +30,23 @@ body {
     font-feature-settings: "kern" 1;
     font-kerning: normal;
     
-    background-color: #000000;
+    // background-color: #000000;
+
+	// background: repeating-linear-gradient(
+	// 	45deg,
+	// 	#270f00,
+	// 	#270f00 20px,
+	// 	#150800 20px,
+	// 	#150800 40px
+	// );
+	background: repeating-linear-gradient(
+		-45deg,
+		#ce4d00,
+		#ce4d00 20px,
+		#9a3900 20px,
+		#9a3900 40px
+	);
+	background-attachment: fixed;
 }
 
 
@@ -211,6 +227,13 @@ pre {
  */
 .icon {
 
+	// &:hover {
+	// 	background-color: $brand-color;
+	// 	/*
+	// 	text-decoration: underline;
+	// 	*/
+	// }
+
     > svg {
         display: inline-block;
         width: 16px;
@@ -219,6 +242,23 @@ pre {
 
         path {
             fill: $grey-color;
+
+			// &:hover {
+			// 	fill: $brand-color;
+			// 	/*
+			// 	text-decoration: underline;
+			// 	*/
+			// }
         }
+
+		
     }
+
+    > i {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+	}
+	
 }
