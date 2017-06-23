@@ -2,6 +2,7 @@
 layout: page
 title: Portfolio
 permalink: /portfolio/
+excerpt: My humble creations
 ---
 
 # Pre-Integrated Skin Shader for Unity3D
